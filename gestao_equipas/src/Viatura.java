@@ -2,14 +2,16 @@ public class Viatura {
     private String tipo_viatura;
     private int num_rodas;
     private int vel_max;
+    private String matricula;
     
     // Construtores
     public Viatura() {
     }
-    public Viatura(String tipo_viatura, int num_rodas, int vel_max) {
+    public Viatura(String tipo_viatura, int num_rodas, int vel_max, String matricula) {
         this.tipo_viatura = tipo_viatura;
         this.num_rodas = num_rodas;
         this.vel_max = vel_max;
+        this.matricula = matricula;
     }
 
     // Getters & Setters
@@ -38,6 +40,7 @@ public class Viatura {
         System.out.println("Tipo da viatura: " + this.tipo_viatura);
         System.out.println("Numero de rodas: " + this.num_rodas);
         System.out.println("Velocidade Maxima: " + this.vel_max);
+        System.out.println("Matricula: " + this.matricula);
     }
     
 }
